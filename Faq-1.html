@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+    .wrapper{
+        max-width: 75%;
+        margin: auto;
+    }
+    .wrapper > h1 {
+    margin:1.5 rem 0;
+    text-align:center;
+    }
+    .wrapper > h1{
+        letter-spacing:3px;
+    
+    }
+    .accordion{
+        background-color: white;
+        color:rgba(0,0,0,0.8);
+        cursor: pointer;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 2rem 2.5rem;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+    .accordion > i {
+        font-size:1.6rem;
+    }
+    .active, .accordion:hover{
+        background-color: rgb(232, 156, 168);
+    }
+    .pannel{
+        padding: 0 2rem 2.5rem 2rem;
+        background-color: white;
+        overflow: hidden;
+        background-color: rgb(232, 156, 168);
+        display: none;
+    
+    }
+    
+    .pannel p {
+        color: rgba(0,0,0,0.7);
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    
+    }
+    .faq{
+        border: 1px solid rgba(0,0,0,0.2);
+        margin: 10px 0;
+    }
+    .faq.active{
+        border: none;
+    
+    }
+    </style>
+
+
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Matrimonial Website</title>
+  </head>
+  <body>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="C:\Users\Reyan\Desktop\Web\images\3dffe7e8-2068-4aeb-98d6-9912a9bb8554.jpg" >
+          <a class="navbar-brand" href="file:///C:/Users/Reyan/Desktop/Web/Website3.html?#" style="padding-left: 15px ; color: crimson;"><i>MatchMaker</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="C:\Users\Reyan\Desktop\Web\Login-1.html">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="C:\Users\Reyan\Desktop\Web\extra.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="C:\Users\Reyan\Desktop\Web\Faq-1.html">FAQ</a>
+
+                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+              </li>
+             <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>-->
+            </ul>
+            
+            <!--<form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+          </div>
+        </div>
+      </nav>
+      <!--End  NavBar-->
+      <h1 style="text-align: center; padding: 20px; color: crimson;" > <i>MatchMaker</i></h1>
+
+
+
+      <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <button class="accordion">
+                What is MatchMaker?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>MatchMaker provides a safe and secure way to link up with others on this platform, to find your perfect match.</p>
+                
+        </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                Can i create account for someone else?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes you can but only one account can be created from one phone number.</p>
+        </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How long do i have access for free?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>It is free for limited time period 60 days,by creating your profile you can get verified.</p>
+        </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                Is my information and pictures secure?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>During sign up, you have the option to hide your pictures.<br>
+                   Once you see someone is interested in your profile, you can then review and open the image access specifically for this memeber.</p>
+        </div>
+        </div>
+        </div>
+    
+        <script>
+            var acc = document.getElementsByClassName
+            ("accordion");
+            var i;
+            for(i = 0; i< acc.length; i++){
+                acc[i].addEventListener("click", function()
+                {
+                  this.classList.toggle("active");
+                  this.parentElement.classList.toggle("active");
+    
+                  var pannel = this.nextElementSibling;
+                  if(pannel.style.display === "block"){
+                    pannel.style.display = "none";}
+                    else{
+                        pannel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+<div class ="row" style="background-color: crimson; padding-top: 50px;">
+    <div class = "col-md-4">
+        <h4 style="padding: 40px; text-align: center; color: white;">Get in Touch</h4>
+        <ul>
+            <li style="padding: 20px; color:white">Address: 3812 Lena Lane City Jackson Mississippi </li> 
+                <li style="padding: 20px; color: white;">Phone: +92 (8800) 68 - 8960</li>
+                <li style="padding: 20px; color: white;">Email: info@example.com</li>
+        </ul>
+
+    </div>
+    <div class="col-md-4">
+        <h4 style="padding: 40px; text-align: center; color: white;">Help & Support</h4>
+        <ul>
+            <li style="padding: 20px; color:white">About Company</li> 
+                <li style="padding: 20px; color: white;">Feedback</li>
+                <li style="padding: 20px; color: white;">Testimonials</li>
+        </ul>
+
+    </div>
+    <div class ="col-md-4">
+        <h4 style="padding: 40px; text-align: center; color: white;" > Social Media</h4>
+        <img src="file:///F:/Web%20Development%20Projects/Metrimonial%20website2/rn53themes.net/themes/matrimo/images/social/1.png" width="50" height="50">
+        <img src="file:///F:/Web%20Development%20Projects/Metrimonial%20website2/rn53themes.net/themes/matrimo/images/social/2.png" width="50" height="50" >
+        <img src = "file:///F:/Web%20Development%20Projects/Metrimonial%20website2/rn53themes.net/themes/matrimo/images/social/3.png" width="50" height="50" >
+        <img src="file:///F:/Web%20Development%20Projects/Metrimonial%20website2/rn53themes.net/themes/matrimo/images/social/5.png" width="50" height="50" >
+        
+    
+    </div><hr style="color: white;">
+    <h2 style="text-align: center; color: white; font-size: medium; padding: 50; "><em>MatchMaker - Trusted by over thousands of Boys & Girls for successfull marriage.</em></h2>
+    <br><br>
+    <h3 style="text-align: center; color: white; font-size: medium; padding: 50; ">Group Names <br> Hafsa(2021-ag-7989), Sehar Anwar(2021-ag-8006), Fajar Fatima (2021-ag-7977), Shaheera Younas(2021-ag-7915), Faiqa Shahid(2021-ag-7909)</h3><br><br>
+
+ </div>
+
+
+
+
+
+
+
+      </body>
